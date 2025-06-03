@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Add Face
+        </title>
+    </head>
+    <body>
+        <h1> Add Face </h1>
+        <h4>
+            Links
+            <ul>
+                <li><a href="{{url_for('index')}}"> Home </a></li>
+            </ul>
+        </h4>
+        {% if message == "GET" %}
+            <form action="" method="post" enctype="multipart/form-data">
+                <input required type="text" name="name"/>
+                <label for="file">Image</label><input required type="file" name="file"/>
+                <input type="submit" value="upload" accept="image/*"/>
+            </form>
+        </body>
+        {% else %}
+            {{ message }}
+        {% endif %}
+</html>

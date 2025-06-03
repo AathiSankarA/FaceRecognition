@@ -1,0 +1,5 @@
+tf-keras
+deepface
+opencv-python
+matplotlib
+python-dotenv

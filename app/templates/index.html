@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>
+            Face recognition
+        </title>
+        <style>
+            h1{
+                text-align: center;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> A simple face recognition platform built using <a href="https://github.com/serengil/deepface">DeepFace</a> </h1>
+        <h4>
+            Links
+            <ul>
+                <li><a href="{{url_for('add_name')}}"> Add Name </a></li>
+                <li><a href="{{url_for('add_face_to_name')}}">Add Face to Name </a></li>
+                <li><a href="{{url_for('verify_faces')}}"> Verify Faces</a></li>
+                <li><a href="{{url_for('find_face')}}"> Find Face </a></li>
+            </ul>
+        </h4>
+    </body>
+</html>

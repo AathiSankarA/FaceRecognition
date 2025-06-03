@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>
+            Add Name
+        </title>
+    </head>
+    <body>
+        <h1> Add Name </h1>
+        <h4>
+            Links
+            <ul>
+                <li><a href="{{url_for('index')}}"> Home </a></li>
+            </ul>
+        </h4>
+        {% if message == "GET" %}
+            <form action="" method="post">
+                <input required type="text" name="name"/>
+                <input type="submit" value="add"/>
+            </form>
+        </body>
+        {% else %}
+            {{ message }}
+        {% endif %}
+</html>
