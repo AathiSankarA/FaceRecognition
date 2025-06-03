@@ -6,4 +6,4 @@ Using [DeepFace](https://github.com/serengil/deepface) framework
 * install requirements
 * edit .env (if required)
 * start flask server (flask run)
-* go th the web interface using the like
+* go th the web interface using the link
